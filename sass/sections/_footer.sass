@@ -1,0 +1,121 @@
+.footer
+  display: flex
+  flex-direction: column
+
+  padding: 150px 0 50px 0
+
+  background-color: #fff
+
+  &__top
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    .footer__col
+      display: flex
+      flex-direction: column
+
+      &--main
+        flex: 0 370px
+
+        .footer__logo
+          margin-bottom: 35px
+
+        .footer__info
+          font-size: 18px
+
+          color: $color--gray 
+
+          margin-bottom: 30px
+
+        form
+          position: relative
+
+          input
+            font-family: $font--roboto
+            font-size: 18px
+            line-height: 1
+
+            width: 100%
+
+            padding: 20px
+
+            border-radius: 10px
+
+            background-color: #f3f9fb
+        
+          [type="submit"]
+            display: flex
+            align-items: center
+            justify-content: center
+
+            position: absolute
+            top: 0
+            right: 0
+
+            width: 60px
+            height: 60px
+
+            font-size: 24px
+
+            color: #666
+
+            cursor: pointer
+
+            transition: color .3s
+
+            &:hover
+              color: $color--purple
+
+      &--navigation
+        h6
+          font-size: 24px
+          font-weight: 800
+
+          margin-bottom: 30px
+
+        ul
+          display: flex
+          flex-direction: column
+
+          li
+            font-size: 18px
+
+            color: $color--gray
+
+            i
+              font-size: 14px
+
+              margin-right: 20px
+
+            &:not(:last-child)
+              margin-bottom: 15px
+
+  &__bottom
+    margin-top: 160px
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+  &__follow
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    h6
+      font-size: 18px
+      font-weight: 800
+
+      margin-right: 50px
+
+  &__copyright
+    font-size: 18px
+    
+    color: $color--gray
+
+    .author
+      font-weight: 800
+
+      color: #000

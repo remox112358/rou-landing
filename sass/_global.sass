@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  
+body
+  font-family: $font--overpass, $font--alternative
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+
+  color: $color--text
+  background-color: $color--light
+
+.section
+  &__heading
+    display: flex
+    flex-direction: column
+
+    margin-bottom: 120px
+
+    &--left
+      text-align: left
+
+      align-items: flex-start
+
+    &--center
+      text-align: center
+
+      align-items: center
+
+    &--right
+      text-align: right
+
+      align-items: flex-end
+
+    .subheading
+      font-size: 24px
+      font-weight: 700
+      letter-spacing: 5px
+      text-transform: uppercase
+
+      margin-bottom: 30px
+
+      color: $color--purple
+
+    .heading
+      font-size: 60px
+      font-weight: 700
+
+      max-width: 760px

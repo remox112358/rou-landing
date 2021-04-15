@@ -1,0 +1,26 @@
+.social
+  display: flex
+  flex-direction: row
+
+  font-size: 21px
+
+  &__item
+    transition: transform .2s ease-in-out
+
+    &:hover
+      transform: scale(1.2)
+
+    &:not(:last-child)
+      margin-right: 15px
+
+    &--facebook
+      color: $color--facebook
+    
+    &--twitter
+      color: $color--twitter
+    
+    &--youtube
+      color: $color--youtube
+
+    &--instagram
+      color: $color--instagram

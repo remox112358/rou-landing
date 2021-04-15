@@ -1,0 +1,68 @@
+.section--service
+  padding-bottom: 180px
+
+  .services
+    display: flex
+    flex-direction: row
+
+    &__col
+      display: flex
+      flex-direction: column
+
+      &:not(:last-child)
+        margin-right: 30px
+
+      > *:nth-child(1)
+        margin-bottom: 30px
+
+      &:nth-child(2)
+        margin-top: 80px
+
+      &:nth-child(3)
+        margin-top: 160px
+
+    .service
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      height: 450px
+
+      padding: 60px 20px 40px 20px
+
+      border-radius: 25px
+
+      box-shadow: 0px 24px 72px 0px rgba(7, 28, 75, 0.07)
+
+      text-align: center
+
+      &__icon
+        margin-bottom: 40px
+
+      &__title
+        font-size: 30px
+        font-weight: 800
+
+        margin-bottom: 25px
+
+      &__info
+        font-size: 20px
+
+        color: $color--gray
+
+        margin-bottom: 40px
+
+      &__link
+        display: flex
+        align-items: center
+        justify-content: center
+
+        width: 50px
+        height: 50px
+
+        &:hover
+          img
+            transform: rotate(360deg) scale(1.2)
+
+        img
+          transition: transform .4s

@@ -1,0 +1,67 @@
+.button
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  font-family: $font--overpass
+  font-weight: 800
+  line-height: 1
+  text-align: center
+
+  border-width: 0px
+  border-style: solid
+  border-radius: 7.5px
+
+  transition: background-color $transition--button ease, color $transition--button ease
+
+  cursor: pointer
+
+  span
+    margin-top: 3px
+
+  &--small
+    max-width: 180px
+    width: 100%
+    height: 50px
+
+    font-size: 18px
+
+  &--medium
+    max-width: 200px
+    width: 100%
+    height: 60px
+
+    font-size: 18px
+
+  &--big
+    max-width: 240px
+    width: 100%
+    height: 70px
+
+    font-size: 24px
+
+  &--purple
+    border-color: $color--purple
+    background-color: $color--purple
+
+    &:hover
+      color: #fff
+
+    &:hover:not(.button--outlined)
+      background-color: darken($color--purple, 10%)
+
+    &:hover.button--outlined
+      background-color: $color--purple
+
+    &:active
+      border-color: darken($color--purple, 20%) !important
+      background-color: darken($color--purple, 20%) !important
+
+  &--outlined
+    border-width: 2px
+
+    background-color: transparent 
+
+  &:not(&--outlined)
+    color: #fff

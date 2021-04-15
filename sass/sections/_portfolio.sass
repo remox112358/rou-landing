@@ -1,0 +1,105 @@
+.section--portfolio
+  padding-bottom: 180px
+
+  .portfolio
+    display: flex
+    flex-direction: column
+
+    .project
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+
+      &:not(:last-child)
+        margin-bottom: 120px
+
+      &--red
+        .project__image::before
+          border-color: #fcd7df
+
+        .project__category
+          color: #fe6686
+
+      &--blue
+        .project__image::before
+          border-color: #c9f3e2
+
+        .project__category
+          color: #54d6a1
+
+      &--orange
+        .project__image::before
+          border-color: #f2d5ba
+
+        .project__category
+          color: #fe9a3f
+
+      &__image
+        position: relative
+        z-index: 1
+
+        width: 440px
+        height: 440px
+
+        &::before
+          content: ''
+
+          position: absolute
+          top: -25px
+          left: -25px
+          z-index: -1
+
+          border-width: 6px
+          border-style: solid
+          border-radius: 15px
+
+          width: 420px
+          height: 420px
+
+        img
+          width: 100%
+          height: 100%
+
+          object-fit: cover
+          object-position: bottom
+
+      &__content
+        display: flex
+        flex-direction: column
+
+        max-width: 560px
+
+      &__category
+        font-size: 24px
+        font-weight: 800
+
+        margin-bottom: 10px
+
+      &__title
+        font-size: 42px
+        font-weight: 800
+
+        margin-bottom: 25px
+
+      &__info
+        font-size: 20px
+        
+        color: $color--gray
+
+        margin-bottom: 45px
+
+      &--reverse
+        flex-direction: row-reverse
+
+        .project__image
+          &::before
+            left: auto
+            right: -25px
+
+      &__image--down
+        &::before
+          z-index: 2
+
+    .link
+      margin: 80px auto 0 auto

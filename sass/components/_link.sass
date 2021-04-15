@@ -1,0 +1,36 @@
+.link
+  position: relative
+
+  display: block
+
+  max-width: max-content
+
+  font-size: 18px
+  font-weight: 800
+
+  &:hover
+    &::before
+      transform: translate(calc(50% - 10px), -4px)
+
+    &::after
+      transform: translate(calc(-50% + 10px), 4px)
+
+  &::before,
+  &::after
+    content: ''
+
+    position: absolute
+    bottom: -5px
+
+    width: 50%
+    height: 3px
+
+    background-color: $color--purple
+
+    transition: transform .3s
+
+  &::before
+    left: 0
+
+  &::after
+    right: 0
