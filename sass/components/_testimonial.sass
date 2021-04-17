@@ -1,0 +1,56 @@
+.testimonial
+  display: flex
+  flex-direction: column
+
+  &__subheading
+    font-size: 24px
+    font-weight: 700
+    letter-spacing: 5px
+    text-transform: uppercase
+
+    margin-bottom: 30px
+
+    color: $color--purple
+
+  &__heading
+    font-size: 60px
+    font-weight: 800
+
+    margin-bottom: 40px
+
+  &__text
+    font-size: 24px
+
+    margin-bottom: 60px
+    
+    color: $color--gray
+
+  &__author
+    position: relative
+
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    line-height: 1
+
+    &::before
+      content: ''
+
+      width: 18px
+      height: 2px
+
+      margin-right: 20px
+
+      background-color: $color--darkblue
+
+    .author__name
+      font-size: 24px
+      font-weight: 800
+
+      margin-right: 15px
+
+    .author__post
+      font-size: 18px
+
+      color: $color--lightgray

@@ -68,7 +68,7 @@
               color: $color--purple
 
       &--navigation
-        h6
+        .footer__title
           font-size: 24px
           font-weight: 800
 
@@ -82,6 +82,12 @@
             font-size: 18px
 
             color: $color--gray
+
+            a
+              transition: color .2s
+
+              &:hover
+                color: $color--purple
 
             i
               font-size: 14px
@@ -104,7 +110,7 @@
     flex-direction: row
     align-items: center
 
-    h6
+    .footer__title
       font-size: 18px
       font-weight: 800
 

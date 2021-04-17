@@ -5,16 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rou - the modern landing page">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/vendor/slick.css">
+  <link rel="stylesheet" href="./assets/vendor/aos.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Scripts -->
+  <script src="./assets/vendor/jquery.min.js" defer></script>
+  <script src="./assets/vendor/slick.min.js" defer></script>
+  <script src="./assets/vendor/jquery.paroller.min.js" defer></script>
+  <script src="./assets/vendor/aos.min.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
   
   <!-- Document title -->
-  <title>Document</title>
+  <title>Rou - Home</title>
 </head>
 <body>
+  <div class="scroll-indicator">
+    <div class="bar" style="width: 0%;"></div>
+  </div>
   <section class="section section--hero">
+    <img class="decoration" style="top: 80px; left: 150px;" src="./assets/images/hero/decorations/decorations-1.png" alt="Decorations">
+    <img class="decoration" style="top: 120px; left: 70px;" src="./assets/images/hero/decorations/decorations-2.png" alt="Decorations">
     <div class="container">
       <header class="header">
         <div class="header__logo">
@@ -25,22 +43,22 @@
         <nav class="navigation">
           <ul class="navigation__menu">
             <li class="navigation__item">
-              <a href="/" class="navigation__link">Home</a>
+              <a href="#" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
-              <a href="/" class="navigation__link">About</a>
+              <a href="#about" class="navigation__link">About</a>
             </li>
             <li class="navigation__item">
-              <a href="/" class="navigation__link">Service</a>
+              <a href="#service" class="navigation__link">Service</a>
             </li>
             <li class="navigation__item">
-              <a href="/" class="navigation__link">Works</a>
+              <a href="#portfolio" class="navigation__link">Works</a>
             </li>
             <li class="navigation__item">
-              <a href="/" class="navigation__link">News</a>
+              <a href="#blog" class="navigation__link">News</a>
             </li>
             <li class="navigation__item">
-              <a href="/" class="navigation__link">Contact</a>
+              <a href="#contact" class="navigation__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -49,28 +67,28 @@
         </button>
         <ul class="social">
           <li class="social__item social__item--facebook">
-            <a href="/" class="social__link">
+            <a href="/" aria-label="facebook" class="social__link">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li class="social__item social__item--twitter">
-            <a href="/" class="social__link">
+            <a href="/" aria-label="twitter" class="social__link">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="social__item social__item--youtube">
-            <a href="/" class="social__link">
+            <a href="/" aria-label="youtube" class="social__link">
               <i class="fab fa-youtube"></i>
             </a>
           </li>
           <li class="social__item social__item--instagram">
-            <a href="/" class="social__link">
+            <a href="/" aria-label="instagram" class="social__link">
               <i class="fab fa-instagram"></i>
             </a>
           </li>
         </ul>
       </header>
-      <div class="hero">
+      <div class="hero" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="hero__title">Work Smartly with Endless  Possibility</h1>
         <p class="hero__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction</p>
         <a href="/" class="button button--link button--big button--purple">
@@ -82,34 +100,34 @@
   <section class="section section--intro">
     <div class="container">
       <div class="section__heading section__heading--center">
-        <h3 class="subheading">build trust first</h3>
+        <span class="subheading">build trust first</span>
         <h2 class="heading">Control your buisiness with a single tap</h2>
       </div>
       <div class="section__inner">
         <div class="advantages">
-          <div class="advantage advantage--red">
+          <div class="advantage advantage--red" data-aos="fade-down" data-aos-duration="1000">
             <img src="./assets/images/intro/anchor.png" alt="Anchor" class="advantage__icon">
-            <h4 class="advantage__title">Complete business control</h4>
+            <span class="advantage__title">Complete business control</span>
             <p class="advantage__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
           </div>
-          <div class="advantage advantage--green">
+          <div class="advantage advantage--green" data-aos="fade-up" data-aos-duration="2000">
             <img src="./assets/images/intro/archive.png" alt="Archive" class="advantage__icon">
-            <h4 class="advantage__title">Critical analytics and report</h4>
+            <span class="advantage__title">Critical analytics and report</span>
             <p class="advantage__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
           </div>
-          <div class="advantage advantage--orange">
+          <div class="advantage advantage--orange" data-aos="fade-down" data-aos-duration="3000">
             <img src="./assets/images/intro/user.png" alt="User" class="advantage__icon">
-            <h4 class="advantage__title">User satisfaction guarranted</h4>
+            <span class="advantage__title">User satisfaction guarranted</span>
             <p class="advantage__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section section--about">
+  <section class="section section--about" id="about">
     <div class="container">
       <div class="section__inner">
-        <div class="about">
+        <div class="about" data-aos="fade-right" data-aos-duration="2000">
           <div class="about__content">
             <h3 class="about__title">Most innovative creative team</h3>
             <p class="about__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction</p>
@@ -130,18 +148,18 @@
       </div>
     </div>
   </section>
-  <section class="section section--service">
+  <section class="section section--service" id="service">
     <div class="container">
       <div class="section__heading section__heading--right">
-        <h3 class="subheading">what we do</h3>
+        <span class="subheading">what we do</span>
         <h2 class="heading">Service to solve all kinds of business problem</h2>
       </div>
       <div class="section__inner">
         <div class="services">
-          <div class="services__col">
+          <div class="services__col" data-aos="fade-up" data-aos-duration="1000">
             <div class="service">
               <img src="./assets/images/service/squares.png" alt="Squares" class="service__icon">
-              <h4 class="service__title">Business Automation</h4>
+              <span class="service__title">Business Automation</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
@@ -149,17 +167,17 @@
             </div>
             <div class="service">
               <img src="./assets/images/service/headphones.png" alt="Headphones" class="service__icon">
-              <h4 class="service__title">Realtime Support</h4>
+              <span class="service__title">Realtime Support</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
               </a>
             </div>
           </div>
-          <div class="services__col">
+          <div class="services__col" data-aos="fade-up" data-aos-duration="2000">
             <div class="service">
               <img src="./assets/images/service/cart.png" alt="Cart" class="service__icon">
-              <h4 class="service__title">Ecommerce Support</h4>
+              <span class="service__title">Ecommerce Support</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
@@ -167,17 +185,17 @@
             </div>
             <div class="service">
               <img src="./assets/images/service/location.png" alt="Location" class="service__icon">
-              <h4 class="service__title">Location Marking</h4>
+              <span class="service__title">Location Marking</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
               </a>
             </div>
           </div>
-          <div class="services__col">
+          <div class="services__col" data-aos="fade-up" data-aos-duration="3000">
             <div class="service">
               <img src="./assets/images/service/video.png" alt="Video" class="service__icon">
-              <h4 class="service__title">Video Production</h4>
+              <span class="service__title">Video Production</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
@@ -185,7 +203,7 @@
             </div>
             <div class="service">
               <img src="./assets/images/service/upload.png" alt="Upload" class="service__icon">
-              <h4 class="service__title">File Upload Protocol</h4>
+              <span class="service__title">File Upload Protocol</span>
               <p class="service__info">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exerci tation</p>
               <a href="/" class="service__link">
                 <img src="./assets/images/service/arrow.png" alt="Arrow">
@@ -196,15 +214,15 @@
       </div>
     </div>
   </section>
-  <section class="section section--portfolio">
+  <section class="section section--portfolio" id="portfolio">
     <div class="container">
       <div class="section__heading section__heading--center">
-        <h3 class="subheading">out projects</h3>
+        <span class="subheading">out projects</span>
         <h2 class="heading">Check the real innovation of problem solving</h2>
       </div>
       <div class="section__inner">
         <div class="portfolio">
-          <div class="project project--red">
+          <div class="project project--red" data-aos="fade-right" data-aos-duration="1000">
             <div class="project__image">
               <img src="./assets/images/portfolio/photo-1.png" alt="Photo">
             </div>
@@ -217,7 +235,7 @@
               </a>
             </div>
           </div>
-          <div class="project project--blue project--reverse">
+          <div class="project project--blue project--reverse" data-aos="fade-left" data-aos-duration="2000">
             <div class="project__image project__image--down">
               <img src="./assets/images/portfolio/photo-2.png" alt="Photo">
             </div>
@@ -230,7 +248,7 @@
               </a>
             </div>
           </div>
-          <div class="project project--orange">
+          <div class="project project--orange" data-aos="fade-right" data-aos-duration="3000">
             <div class="project__image project__image--down">
               <img src="./assets/images/portfolio/photo-3.png" alt="Photo">
             </div>
@@ -251,11 +269,11 @@
   <section class="section section--team">
     <div class="container">
       <div class="section__heading section__heading--center">
-        <h3 class="subheading">meet our team</h3>
+        <span class="subheading">meet our team</span>
         <h2 class="heading">Awesome people with great business skills</h2>
       </div>
       <div class="section__inner">
-        <div class="team">
+        <div class="team" data-aos="fade-up" data-aos-duration="1000">
           <div class="member">
             <div class="member__image">
               <img src="./assets/images/team/bruce.png" alt="Bruce Wayne">
@@ -291,7 +309,7 @@
   <section class="section section--testimonial">
     <div class="container">
       <div class="section__inner">
-        <div class="section__content">
+        <div class="section__content" data-aos="fade-right" data-aos-duration="1000">
           <div class="slider">
             <div class="testimonial">
               <h3 class="testimonial__subheading">testimonial</h3>
@@ -302,6 +320,24 @@
                 <span class="author__post">Music Producer</span>
               </div>
             </div>
+            <div class="testimonial">
+              <h3 class="testimonial__subheading">testimonial</h3>
+              <h2 class="testimonial__heading">Best quality!</h2>
+              <p class="testimonial__text">Kollit a do eiusmod tempor incididunt ut labore et do irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="testimonial__author">
+                <span class="author__name">Amman Edmonds</span>
+                <span class="author__post">Artist</span>
+              </div>
+            </div>
+            <div class="testimonial">
+              <h3 class="testimonial__subheading">testimonial</h3>
+              <h2 class="testimonial__heading">Best choise!</h2>
+              <p class="testimonial__text">Kollit a do eiusmod tempor incididunt ut labore et do irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="testimonial__author">
+                <span class="author__name">Andre Forster</span>
+                <span class="author__post">WEB Developer</span>
+              </div>
+            </div>
           </div>
           <div class="dots">
             <div class="dot active"></div>
@@ -309,36 +345,36 @@
             <div class="dot"></div>
           </div>
         </div>
-        <div class="section__image">
+        <div class="section__image" data-aos="fade-left" data-aos-duration="2000">
           <img src="./assets/images/testimonial/photo.png" alt="Photo">
         </div>
       </div>
     </div>
   </section>
-  <section class="section section--contact">
+  <section class="section section--contact" id="contact">
     <div class="container">
       <div class="section__heading section__heading--center">
-        <h3 class="subheading">contact us</h3>
+        <span class="subheading">contact us</span>
         <h2 class="heading">Stay connected with us for any reason</h2>
       </div>
       <div class="section__inner">
         <div class="contact">
-          <form class="contact__form" action="/" method="POST">
-            <h4 class="contact__title">Write us a message</h4>
+          <form class="contact__form" action="/" method="POST" data-aos="fade-right" data-aos-duration="1000">
+            <span class="contact__title">Write us a message</span>
             <input type="text" name="name" placeholder="Your name" required>
             <input type="text" name="email" placeholder="Your email" required>
             <input type="text" name="subject" placeholder="Subject" required>
             <textarea name="message" placeholder="Start writing message here" rows="7" required></textarea>
-            <button class="button button--big button--purple">
+            <button class="button button--big button--purple" aria-label="contact">
               <span>Get Started</span>
             </button>
           </form>
-          <div class="contact__info">
+          <div class="contact__info" data-aos="fade-left" data-aos-duration="2000">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua.</p>
             <div class="details">
               <div class="detail">
                 <div class="detail__icon detail__icon--red">
-                  <a href="tel:+012345678910">
+                  <a href="tel:+012345678910" aria-label="Telephone">
                     <i class="fas fa-phone-alt"></i>
                   </a>
                 </div>
@@ -349,7 +385,7 @@
               </div>
               <div class="detail">
                 <div class="detail__icon detail__icon--green">
-                  <a href="mailto:hello@rainydesign.com">
+                  <a href="mailto:hello@rainydesign.com" aria-label="Mail">
                     <i class="fas fa-envelope"></i>
                   </a>
                 </div>
@@ -360,7 +396,7 @@
               </div>
               <div class="detail">
                 <div class="detail__icon detail__icon--orange">
-                  <a href="/">
+                  <a href="/" aria-label="Address">
                     <i class="fas fa-map-marker-alt"></i>
                   </a>
                 </div>
@@ -375,19 +411,19 @@
       </div>
     </div>
   </section>
-  <section class="section section--blog">
+  <section class="section section--blog" id="blog">
     <div class="container">
       <div class="section__heading section__heading--left">
-        <h3 class="subheading">from our blog</h3>
+        <span class="subheading">from our blog</span>
         <h2 class="heading">Get latest update</h2>
         <a href="/" class="link">Go to Blog</a>
       </div>
       <div class="section__inner">
-        <div class="posts">
+        <div class="posts" data-aos="fade-up" data-aos-duration="1000">
           <a href="/">
             <div class="post">
               <span class="post__category post__category--red">App Development</span>
-              <h5 class="post__title">When the musics over turn off the light</h5>
+              <span class="post__title">When the musics over turn off the light</span>
               <p class="post__excerpt">Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit...</p>
               <div class="post__footer">
                 <div class="post__author">
@@ -406,7 +442,7 @@
           <a href="/">
             <div class="post">
               <span class="post__category post__category--green">Design</span>
-              <h5 class="post__title">When the musics over turn off the light</h5>
+              <span class="post__title">When the musics over turn off the light</span>
               <p class="post__excerpt">Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit...</p>
               <div class="post__footer">
                 <div class="post__author">
@@ -425,7 +461,7 @@
           <a href="/">
             <div class="post">
               <span class="post__category post__category--orange">Research</span>
-              <h5 class="post__title">When the musics over turn off the light</h5>
+              <span class="post__title">When the musics over turn off the light</span>
               <p class="post__excerpt">Excep teur sint occae cat cupid atat non proident, sunt in culpa qui officia deser unt mollit...</p>
               <div class="post__footer">
                 <div class="post__author">
@@ -455,13 +491,13 @@
           <p class="footer__info">Fectetur adipisicing elit, sed do eius mod tempor Lorem ipsum dolor sit amet, con sectetur adipisicing elitt ut labore</p>
           <form action="/" method="POST">
             <input type="text" placeholder="Submit email">
-            <button type="submit">
+            <button type="submit" aria-label="subscription">
               <i class="far fa-envelope"></i>
             </button>
           </form>
         </div>
         <div class="footer__col footer__col--navigation">
-          <h6>About</h6>
+          <span class="footer__title">About</span>
           <ul>
             <li>
               <a href="/">About Us</a>
@@ -481,7 +517,7 @@
           </ul>
         </div>
         <div class="footer__col footer__col--navigation">
-          <h6>Service</h6>
+          <span class="footer__title">Service</span>
           <ul>
             <li>
               <a href="/">Development</a>
@@ -498,7 +534,7 @@
           </ul>
         </div>
         <div class="footer__col footer__col--navigation">
-          <h6>Get in Touch</h6>
+          <span class="footer__title">Get in Touch</span>
           <ul>
             <li>
               <i class="fas fa-map-marker-alt"></i>
@@ -517,25 +553,25 @@
       </div>
       <div class="footer__bottom">
         <div class="footer__follow">
-          <h6>Follow Us</h6>
+          <span class="footer__title">Follow Us</span>
           <ul class="social">
             <li class="social__item social__item--facebook">
-              <a href="/" class="social__link">
+              <a href="/" aria-label="facebook" class="social__link">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="social__item social__item--twitter">
-              <a href="/" class="social__link">
+              <a href="/" aria-label="twitter" class="social__link">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="social__item social__item--youtube">
-              <a href="/" class="social__link">
+              <a href="/" aria-label="youtube" class="social__link">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
             <li class="social__item social__item--instagram">
-              <a href="/" class="social__link">
+              <a href="/" aria-label="instagram" class="social__link">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>

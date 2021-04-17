@@ -1,5 +1,10 @@
 .section--testimonial
-  padding-bottom: 180px
+  padding: 180px 0
+
+  background-image: url('../images/testimonial/background.png')
+  background-size: cover
+  background-position: bottom
+  background-repeat: no-repeat
 
   .section__inner
     display: flex
@@ -30,69 +35,24 @@
       background-repeat: no-repeat
 
     .slider
-      .testimonial
-        display: flex
-        flex-direction: column
+      *
+        outline: none
 
-        &__subheading
-          font-size: 24px
-          font-weight: 700
-          letter-spacing: 5px
-          text-transform: uppercase
+        cursor: grab
 
-          margin-bottom: 30px
-
-          color: $color--purple
-
-        &__heading
-          font-size: 60px
-          font-weight: 800
-
-          margin-bottom: 40px
-
-        &__text
-          font-size: 24px
-
-          margin-bottom: 60px
-          
-          color: $color--gray
-
-        &__author
-          position: relative
-
-          display: flex
-          flex-direction: row
-          align-items: center
-
-          line-height: 1
-
-          &::before
-            content: ''
-
-            width: 18px
-            height: 2px
-
-            margin-right: 20px
-
-            background-color: $color--darkblue
-
-          .author__name
-            font-size: 24px
-            font-weight: 800
-
-            margin-right: 15px
-
-          .author__post
-            font-size: 18px
-
-            color: $color--lightgray
-
-    .dots
+    .slick-dots
       display: flex
       flex-direction: row
       align-items: center
 
       margin-top: 60px
+
+      li
+        &:not(:last-child)
+          margin-right: 12px
+
+        &.slick-active .dot
+          width: 30px
 
       .dot
         width: 12px
@@ -109,12 +69,6 @@
         &:hover
           background-color: darken($color--purple, 10%)
 
-        &:not(:last-child)
-          margin-right: 12px
-
-        &.active
-          width: 30px
-
   .section__image
     position: relative
     z-index: 1
@@ -130,7 +84,7 @@
       width: 270px
       height: 270px
 
-      background-image: url('../images/decorations/1.png')
+      background-image: url('../images/testimonial/decorations/1.png')
       background-size: 100%
       background-position: center
       background-repeat: no-repeat

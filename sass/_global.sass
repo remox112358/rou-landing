@@ -4,6 +4,8 @@
   box-sizing: border-box
   
 body
+  position: relative
+
   font-family: $font--overpass, $font--alternative
   font-size: 14px
   font-weight: normal
@@ -13,7 +15,23 @@ body
   color: $color--text
   background-color: $color--light
 
+  overflow-x: hidden
+
+  &::-webkit-scrollbar
+    width: 7.5px
+
+  &::-webkit-scrollbar-thumb
+    background-color: $color--purple
+
 .section
+  position: relative
+
+  overflow: hidden
+
+  .container
+    position: relative
+    z-index: 2
+  
   &__heading
     display: flex
     flex-direction: column
